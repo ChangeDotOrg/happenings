@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Changes</title>
+  <script src="node_modules\vue\dist\vue.min.js"></script>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+
+  <div id="app">
+    <p>{{ message }}</p>
+    <hr>
+    <app-user></app-user>
+    <h2>{{ hampton }}</h2>
+    <p> {{ hampton | uppercase }}</p>
+    <p> {{ hampton | lowercase }}</p>
+    <button class="btn btn-default" v-on:click="show = !show">Show/Hide</button>
+    <p v-if="show">Sometimes Visible</p>
+    <p v-else> im visible!</p>
+    <p v-show="show">IM HERE</P>
+    <hr>
+    <ul>
+      <li v-for="(person, index) in persons">{{ person.name }} - {{ index }}</li>
+    </ul>
+    <hr>
+    <button class="btn btn-default" v-on:click="changeTitle">Title Change!</button>
+    <input type="text" v-on:input="cssClass = $event.target.value">
+    <p v-bind:class="cssClass">class: {{ cssClass }}</p>
+    <button class="btn btn-default" v-on:click="increment">INC!</button>
+    <p>Counter: {{ counter }}</p>
+    <p>Clicks: {{ clicks }}</p>
+
+  </div>
+
+</body>
+<script>
+  require('./index.js')
+</script>
+
+</html>

@@ -2,9 +2,11 @@
   "name": "happenings",
   "version": "0.0.1",
   "description": "Game",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
-    "test": "test"
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack": "webpack --config mywebpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +19,14 @@
   },
   "homepage": "https://github.com/ChangeDotOrg/happenings#readme",
   "dependencies": {
-    "electron": "^1.6.10"
+    "bootstrap": "^3.3.7",
+    "electron": "^1.6.10",
+    "jquery": "^3.2.1",
+    "vue": "^2.3.4"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-env": "^1.5.2",
+    "webpack": "^2.6.1"
   }
 }

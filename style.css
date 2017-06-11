@@ -1,0 +1,13 @@
+.red {
+  background-color: red;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.user {
+  border: 1px solid #ccc;
+  background-color: white;
+  padding: 10px;
+}

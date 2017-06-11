@@ -2,3 +2,6 @@
 ## Directories
 #################
 node_modules/
+imgs/
+audio/
+npm-debug.log
