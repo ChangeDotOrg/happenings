@@ -1,0 +1,22 @@
+{
+  "name": "happenings",
+  "version": "0.0.1",
+  "description": "Game",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChangeDotOrg/happenings.git"
+  },
+  "author": "Hampton Brewer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChangeDotOrg/happenings/issues"
+  },
+  "homepage": "https://github.com/ChangeDotOrg/happenings#readme",
+  "dependencies": {
+    "electron": "^1.6.10"
+  }
+}
